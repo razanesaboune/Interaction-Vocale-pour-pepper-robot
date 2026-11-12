@@ -1,0 +1,86 @@
+
+# PYTHON VIRTUAL ENVIRONMENTS
+pepper/
+pepper_linux/
+venv/
+.venv/
+env/
+ENV/
+virtualenv/
+
+# PYTHON CACHE
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# ENVIRONMENT VARIABLES & SECRETS
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# JUPYTER NOTEBOOKS
+.ipynb_checkpoints/
+.profile_default/
+.ipython/
+
+# AI / MACHINE LEARNING MODELS
+*.onnx
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.ckpt
+*.safetensors
+*.tflite
+
+# AUDIO FILES
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+
+# GENERATED OUTPUTS
+outputs/
+output/
+logs/
+tmp/
+temp/
+*.log
+
+# TEST / CACHE FILES
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.cache/
+
+# VS CODE / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# WINDOWS / MAC / LINUX
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+ 
+# PYTHON BUILD FILES
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# LOCAL DATABASES
+*.sqlite3
+*.db
