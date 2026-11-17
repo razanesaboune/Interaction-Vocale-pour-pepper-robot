@@ -4,22 +4,18 @@ import time
 import requests
 import paramiko
 
+from detection_parole import DetecteurParole
+
 
 # 1. CONFIGURATION
 
-ROBOT_IP = "169.254.107.138"
+ROBOT_IP = "169.254.9.153"
 ROBOT_PORT = 9559
-
 # Services lancés sur Windows
 WINDOWS_IP = "172.23.96.1"
 
-WHISPER_URL = (
-    "http://{}:5000/transcribe".format(WINDOWS_IP)
-)
-
-OLLAMA_URL = (
-    "http://{}:11434/api/chat".format(WINDOWS_IP)
-)
+WHISPER_URL = "http://{}:5000/transcribe".format(WINDOWS_IP)
+OLLAMA_URL = "http://{}:11434/api/chat".format(WINDOWS_IP)
 
 OLLAMA_MODEL = "llama3.2:3b"
 
@@ -30,6 +26,9 @@ REMOTE_AUDIO = (
 LOCAL_AUDIO = "question.wav"
 
 RECORD_SECONDS = 5
+
+# Durée de mesure du bruit ambiant au démarrage (sans parole).
+CALIBRATION_SECONDS = 3
 
 HEAD_SENSOR = (
     "Device/SubDeviceList/Head/Touch/Front/Sensor/Value"
@@ -99,6 +98,10 @@ def configurer_pepper():
     # 4. Désactiver les mouvements de respiration
     try:
         motion = session.service("ALMotion")
+
+        # Désactiver la vie autonome peut mettre
+        # Pepper au repos : on réveille les moteurs.
+        motion.wakeUp()
 
         motion.setBreathEnabled("Body", False)
 
@@ -218,6 +221,71 @@ def recuperer_audio():
         ssh.close()
 
 
+def enregistrer(duree):
+    """
+    Enregistre `duree` secondes avec le micro avant de Pepper
+    puis récupère le fichier dans LOCAL_AUDIO.
+    Lève une exception en cas d'erreur.
+    """
+
+    # Sécurité : arrêter le TTS avant de démarrer l'écoute.
+    try:
+        tts.stopAll()
+    except Exception:
+        pass
+
+    try:
+        recorder.stopMicrophonesRecording()
+    except Exception:
+        pass
+
+    channels = [0, 0, 1, 0]
+
+    try:
+        recorder.startMicrophonesRecording(
+            REMOTE_AUDIO,
+            "wav",
+            16000,
+            channels
+        )
+
+        time.sleep(duree)
+
+    finally:
+        try:
+            recorder.stopMicrophonesRecording()
+        except Exception:
+            pass
+
+    recuperer_audio()
+
+
+# ==========================================
+# 6 bis. DÉTECTION DE PAROLE (BRUIT AMBIANT)
+# ==========================================
+
+detecteur = DetecteurParole()
+
+
+def calibrer_bruit():
+    """Mesure le bruit ambiant (ventilateur de Pepper, salle)."""
+
+    print(
+        "\nCalibration du bruit ambiant : "
+        "silence pendant {} secondes...".format(CALIBRATION_SECONDS)
+    )
+
+    try:
+        enregistrer(CALIBRATION_SECONDS)
+        niveau = detecteur.calibrer(LOCAL_AUDIO)
+        print("Bruit ambiant mesuré : {} dB".format(niveau))
+
+    except Exception as e:
+        # Sans calibration, le bruit sera estimé sur
+        # chaque enregistrement (moins précis).
+        print("Calibration impossible :", e)
+
+
 # ==========================================
 # 7. VÉRIFICATION DES SERVICES WINDOWS
 # ==========================================
@@ -267,6 +335,10 @@ if not ollama_ok:
 # 8. BOUCLE PRINCIPALE
 # ==========================================
 
+configurer_pepper()
+
+calibrer_bruit()
+
 print("\nPepper est prêt !")
 
 try:
@@ -285,65 +357,50 @@ try:
         )
 
         # ----------------------------------
-        # ÉTAPE 2 : ENREGISTREMENT
+        # ÉTAPES 2-3 : ENREGISTREMENT + TRANSFERT
         # ----------------------------------
 
         try:
 
-            # Sécurité : arrêter le TTS
-            # avant de démarrer l'écoute.
-            try:
-                tts.stopAll()
-            except Exception:
-                pass
+            enregistrer(RECORD_SECONDS)
 
-            try:
-                recorder.stopMicrophonesRecording()
-            except Exception:
-                pass
+            print("Enregistrement terminé et récupéré !")
 
-            channels = [0, 0, 1, 0]
+        except Exception as e:
 
-            recorder.startMicrophonesRecording(
-                REMOTE_AUDIO,
-                "wav",
-                16000,
-                channels
+            print("Erreur enregistrement / transfert :", e)
+            continue
+
+        # ----------------------------------
+        # ÉTAPE 3 bis : DÉTECTION DE PAROLE
+        # ----------------------------------
+        # Silence ou bruit seul : rien n'est envoyé
+        # à Whisper ni à Ollama, Pepper reste muet.
+
+        try:
+
+            analyse = detecteur.analyser(LOCAL_AUDIO)
+
+            print(
+                "Analyse audio : {} | parole {} ms | "
+                "SNR {} dB | niveau {} dB | bruit {} dB".format(
+                    analyse["raison"],
+                    analyse.get("duree_parole_ms"),
+                    analyse.get("snr_db"),
+                    analyse.get("niveau_parole_db"),
+                    analyse.get("bruit_db")
+                )
             )
 
-            time.sleep(RECORD_SECONDS)
-
-            recorder.stopMicrophonesRecording()
-
-            print("Enregistrement terminé !")
+            if not analyse["parole"]:
+                print("Enregistrement ignoré.")
+                continue
 
         except Exception as e:
 
-            print("Erreur enregistrement :", e)
-
-            try:
-                recorder.stopMicrophonesRecording()
-            except Exception:
-                pass
-
-            continue
-
-        # ----------------------------------
-        # ÉTAPE 3 : TRANSFERT SFTP
-        # ----------------------------------
-
-        print("Récupération audio depuis Pepper...")
-
-        try:
-
-            recuperer_audio()
-
-            print("Audio récupéré !")
-
-        except Exception as e:
-
-            print("Erreur transfert audio :", e)
-            continue
+            # En cas d'erreur d'analyse, on laisse
+            # Whisper décider (il a son propre VAD).
+            print("Erreur analyse audio :", e)
 
         # ----------------------------------
         # ÉTAPE 4 : WHISPER GPU

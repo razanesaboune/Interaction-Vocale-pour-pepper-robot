@@ -56,7 +56,58 @@ def accueil():
         "message": "Serveur Whisper GPU prêt"
     })
 
-# 5. TRANSCRIPTION AUDIO
+# 5. FILTRAGE DU BRUIT ET DES HALLUCINATIONS
+
+# VAD Silero : plus strict que les valeurs par défaut.
+VAD_PARAMETRES = {
+    "threshold": 0.5,               # probabilité de parole minimale
+    "min_speech_duration_ms": 250,  # ignore les bruits très brefs
+    "min_silence_duration_ms": 500,
+    "speech_pad_ms": 200,
+}
+
+# Seuils de confiance de Whisper (mêmes valeurs que Whisper d'OpenAI).
+NO_SPEECH_MAX = 0.6
+LOGPROB_MIN = -1.0
+COMPRESSION_MAX = 2.4
+
+# Phrases que Whisper « invente » souvent sur du silence ou du bruit
+# (issues des sous-titres de ses données d'entraînement).
+HALLUCINATIONS = [
+    "sous-titres réalisés par",
+    "sous-titrage",
+    "amara.org",
+    "merci d'avoir regardé",
+    "abonnez-vous",
+    "n'oubliez pas de vous abonner",
+    "radio-canada",
+]
+
+
+def segment_suspect(segment):
+    """Retourne la raison du rejet, ou None si le segment est fiable."""
+
+    texte = segment.text.strip().lower()
+
+    if not texte:
+        return "vide"
+
+    if any(h in texte for h in HALLUCINATIONS):
+        return "hallucination connue"
+
+    if (segment.no_speech_prob > NO_SPEECH_MAX
+            and segment.avg_logprob < LOGPROB_MIN):
+        return "probablement pas de parole (no_speech={:.2f})".format(
+            segment.no_speech_prob)
+
+    if segment.compression_ratio > COMPRESSION_MAX:
+        return "texte répétitif (compression={:.2f})".format(
+            segment.compression_ratio)
+
+    return None
+
+
+# 6. TRANSCRIPTION AUDIO
 
 @app.route("/transcribe", methods=["POST"])
 def transcribe():
@@ -73,19 +124,32 @@ def transcribe():
             audio,
             language="fr",
             beam_size=5,
+            # VAD Silero intégré : ne transcrit que les zones de parole.
             vad_filter=True,
+            vad_parameters=VAD_PARAMETRES,
             condition_on_previous_text=False
         )
 
-        text = " ".join(
-            segment.text.strip()
-            for segment in segments
-        ).strip()
+        gardes = []
+        rejetes = []
+
+        for segment in segments:
+            raison = segment_suspect(segment)
+            if raison:
+                rejetes.append((segment.text.strip(), raison))
+            else:
+                gardes.append(segment.text.strip())
+
+        text = " ".join(gardes).strip()
+
+        for texte_rejete, raison in rejetes:
+            print("Segment rejeté ({}) : {}".format(raison, texte_rejete))
 
         print("Transcription :", text)
 
         return jsonify({
-            "text": text
+            "text": text,
+            "segments_rejetes": len(rejetes)
         })
 
     except Exception as e:

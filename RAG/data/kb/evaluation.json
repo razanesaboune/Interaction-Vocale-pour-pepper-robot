@@ -1,0 +1,1433 @@
+{
+  "nb_questions": 254,
+  "questions_invalides": [],
+  "modes": {
+    "dense": {
+      "global": {
+        "n": 254,
+        "hit@1": 0.657,
+        "hit@3": 0.78,
+        "hit@5": 0.854,
+        "mrr@10": 0.738
+      },
+      "par_theme": {
+        "VAE": {
+          "n": 4,
+          "hit@1": 0.5,
+          "hit@3": 0.75,
+          "hit@5": 1.0,
+          "mrr@10": 0.688
+        },
+        "actualites": {
+          "n": 5,
+          "hit@1": 1.0,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 1.0
+        },
+        "admissions": {
+          "n": 29,
+          "hit@1": 0.517,
+          "hit@3": 0.621,
+          "hit@5": 0.724,
+          "mrr@10": 0.587
+        },
+        "alternance": {
+          "n": 8,
+          "hit@1": 0.875,
+          "hit@3": 0.875,
+          "hit@5": 1.0,
+          "mrr@10": 0.906
+        },
+        "campus": {
+          "n": 8,
+          "hit@1": 0.625,
+          "hit@3": 0.75,
+          "hit@5": 1.0,
+          "mrr@10": 0.744
+        },
+        "contacts": {
+          "n": 13,
+          "hit@1": 0.231,
+          "hit@3": 0.538,
+          "hit@5": 0.615,
+          "mrr@10": 0.397
+        },
+        "ecole": {
+          "n": 23,
+          "hit@1": 0.609,
+          "hit@3": 0.696,
+          "hit@5": 0.783,
+          "mrr@10": 0.677
+        },
+        "entreprises": {
+          "n": 12,
+          "hit@1": 0.75,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 0.875
+        },
+        "evenements": {
+          "n": 8,
+          "hit@1": 0.75,
+          "hit@3": 0.875,
+          "hit@5": 1.0,
+          "mrr@10": 0.838
+        },
+        "financement": {
+          "n": 19,
+          "hit@1": 0.684,
+          "hit@3": 0.842,
+          "hit@5": 0.842,
+          "mrr@10": 0.773
+        },
+        "formation continue": {
+          "n": 11,
+          "hit@1": 0.727,
+          "hit@3": 0.727,
+          "hit@5": 0.818,
+          "mrr@10": 0.765
+        },
+        "formations": {
+          "n": 53,
+          "hit@1": 0.566,
+          "hit@3": 0.736,
+          "hit@5": 0.849,
+          "mrr@10": 0.679
+        },
+        "international": {
+          "n": 21,
+          "hit@1": 0.714,
+          "hit@3": 0.905,
+          "hit@5": 0.905,
+          "mrr@10": 0.808
+        },
+        "legal": {
+          "n": 3,
+          "hit@1": 0.667,
+          "hit@3": 0.667,
+          "hit@5": 0.667,
+          "mrr@10": 0.722
+        },
+        "metiers": {
+          "n": 12,
+          "hit@1": 1.0,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 1.0
+        },
+        "orientation": {
+          "n": 2,
+          "hit@1": 0.5,
+          "hit@3": 0.5,
+          "hit@5": 0.5,
+          "mrr@10": 0.5
+        },
+        "recherche": {
+          "n": 9,
+          "hit@1": 0.889,
+          "hit@3": 0.889,
+          "hit@5": 1.0,
+          "mrr@10": 0.911
+        },
+        "vie etudiante": {
+          "n": 14,
+          "hit@1": 0.857,
+          "hit@3": 0.857,
+          "hit@5": 0.857,
+          "mrr@10": 0.869
+        }
+      },
+      "echecs_top5": [
+        {
+          "question": "Quels sont les débouchés du parcours ingénieur IA et données de santé ?",
+          "theme": "formations",
+          "rang": 7,
+          "top3": [
+            "IA & DATA > Quels métiers après une formation en IA ",
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Le diplôme",
+            "IA & DATA > Programme Ingénieur – Spécialisation IA "
+          ]
+        },
+        {
+          "question": "Quel est le numéro RNCP du titre d'ingénieur ESIEE-IT ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "La VAE : validation des acquis de l'expérience > Quel diplôme peut-on obtenir chez ESIEE-",
+            "Rejoignez ESIEE-IT, l'école d’ingénieurs et d'informatique d > Spécialisez-vous avec les Bac +5 ESIEE-I",
+            "Bac +3 Développeur de Solutions Numériques Sécurisées (Titre > Nos indicateurs"
+          ]
+        },
+        {
+          "question": "Quelles sont les dates limites des sessions d'admission 2026-2027 du cycle ingénieur ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Conditions d'admission au programme Ingénieur > Vous êtes étudiant international :",
+            "Conditions d'admission au programme Ingénieur > Calendrier : > Parcoursup simplifie vos ",
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é"
+          ]
+        },
+        {
+          "question": "Est-ce qu'un étudiant de L2 peut intégrer l'école d'ingénieurs ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é",
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale "
+          ]
+        },
+        {
+          "question": "Comment se passe la sélection pour le cycle ingénieur : dossier, entretien ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Vous êtes étudiant international :"
+          ]
+        },
+        {
+          "question": "Quand faut-il formuler ses vœux Parcoursup pour la prépa ESIEE-IT ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "FAQ Orientation & Alternance : Trouvez toutes vos réponses ! > Comment candidater à l’école ESIEE-IT ?",
+            "FAQ Orientation & Alternance : Trouvez toutes vos réponses ! > Présentation / Postuler à ESIEE-IT, hors",
+            "Mon témoignage d’étudiante en prépa du programme Ingénieur E > Rejoignez la Prépa Intégrée à ESIEE-IT !"
+          ]
+        },
+        {
+          "question": "Comment un étudiant international qui n'a jamais étudié en France candidate à la prépa ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Étudiants internationaux > Les étudiants de nationalité non françai",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale "
+          ]
+        },
+        {
+          "question": "Quel est le tarif du Bachelor pour un étudiant international ?",
+          "theme": "financement",
+          "rang": 7,
+          "top3": [
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Vous êtes étudiant international :"
+          ]
+        },
+        {
+          "question": "Le stage est-il obligatoire en Bachelor informatique ?",
+          "theme": "formations",
+          "rang": 7,
+          "top3": [
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > FAQ > Questions fréquentes sur le Bachel",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > 1ère année - Acquérir les fondamentaux d",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > Témoignages & Projets en Informatique > "
+          ]
+        },
+        {
+          "question": "Comment candidater en alternance en 1ère année de Bachelor ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Comment trouver son alternance en urgence ? > Utiliser les réseaux sociaux pour trouve",
+            "Comment trouver son alternance en urgence ? > Se renseigner sur les entreprises qui re",
+            "Guide pratique pour décrocher votre premier emploi > Transformez votre alternance en CDI"
+          ]
+        },
+        {
+          "question": "Quels parcours peut-on choisir en 3e année de Bachelor informatique ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > FAQ > Questions fréquentes sur le Bachel",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > FAQ > Questions fréquentes sur le Bachel",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > 1ère année - Acquérir les fondamentaux d"
+          ]
+        },
+        {
+          "question": "Quels métiers après le Bachelor informatique ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Informatique > Quels métiers après une formation en inf",
+            "10 métiers après le diplôme ingénieur parcours Informatique  > Des métiers au cœur de l’innovation / De",
+            "10 métiers après le diplôme ingénieur parcours Informatique  > Un large choix de métiers"
+          ]
+        },
+        {
+          "question": "Quels sont les frais de candidature pour un étudiant international à la Coding Factory ?",
+          "theme": "financement",
+          "rang": 10,
+          "top3": [
+            "Conditions d'admission au programme Ingénieur > Vous êtes étudiant international :",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale "
+          ]
+        },
+        {
+          "question": "C'est quoi la Coding Factory ?",
+          "theme": "formations",
+          "rang": 7,
+          "top3": [
+            "Coding Factory > La Coding Factory, une pédagogie innovan",
+            "Coding Factory > Concepteur Développeur d'Applications : ",
+            "Coding Factory > Le Guide des Métiers / Les ateliers d'in"
+          ]
+        },
+        {
+          "question": "Peut-on entrer directement en 2e année du Bac+5 cybersécurité ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > FAQ > Questions fréquentes sur le Bac+5 ",
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > FAQ > Questions fréquentes sur le Bac+5 ",
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > Admissions > Comment candidater ? / Prér"
+          ]
+        },
+        {
+          "question": "Quel est le code RNCP du titre Consultant en Business Analyse ?",
+          "theme": "formations",
+          "rang": 6,
+          "top3": [
+            "Business Analyse > Notre formation en Consultant en Busines",
+            "Bac+5 Consultant en Business Analyse > Suite de Parcours et Poursuite d'Études",
+            "Bac+5 Consultant en Business Analyse > Examens et délivrance du diplôme"
+          ]
+        },
+        {
+          "question": "C'est quoi le projet Retrobikefury ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Construire le Wiki d'une équipe IT : retour sur un projet in > Ce que j'en retiens / D'autres news à dé",
+            "Retour d’expérience – Hack Days « IA & Digital Workspace » ( > En quoi consistait notre projet ?",
+            "Retour d’expérience – Hack Days « IA & Digital Workspace » ( > L’événement en quelques mots"
+          ]
+        },
+        {
+          "question": "Comment s'inscrire à une formation continue SAFe ?",
+          "theme": "formation continue",
+          "rang": 6,
+          "top3": [
+            "SAFe for Teams (SAFe Practitioner) – SPRA0 > Appliquer SAFe / Public et pré-requis > ",
+            "SAFeRelease Train Engineer (SAFe RTE) – SRTE0 > Pour poursuivre l’apprentissage / Appliq",
+            "Leading SAFe (SAFe Agilist (SA)) (SSAG0) > Conduire le changement / Appliquer SAFe "
+          ]
+        },
+        {
+          "question": "Quels sont les horaires des formations continues ?",
+          "theme": "formation continue",
+          "rang": null,
+          "top3": [
+            "Les modalités d'inscriptions et informations pratiques > Modalités d'inscriptions",
+            "Formation Bac+5 Lead Developpeur B-School by BNP Paribas > Analyse, conception et modélisation / Dé",
+            "SAFe DevOps Practitioner (SDP SAFe4) – SSDP0 > Réduire le Time to Market avec le déploi"
+          ]
+        },
+        {
+          "question": "Quand est la clôture des candidatures ?",
+          "theme": "admissions",
+          "rang": 6,
+          "top3": [
+            "Candidatures pour la rentrée 2025 & 2026 > Présentation / Les admissions sont close",
+            "Conditions d'admission au programme Ingénieur > Vous êtes étudiant international :",
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é"
+          ]
+        },
+        {
+          "question": "Comment utiliser son CPF pour financer une VAE ?",
+          "theme": "financement",
+          "rang": 9,
+          "top3": [
+            "Comment financer sa VAE grâce au CPF > Comment vérifier vos droits CPF ?",
+            "Comment financer sa VAE grâce au CPF > Foire aux questions (FAQ) sur le CPF et ",
+            "Comment financer sa VAE grâce au CPF > 3. Que faire si mon solde CPF n’est pas "
+          ]
+        },
+        {
+          "question": "Avec qui prendre rendez-vous pour le programme ingénieur ?",
+          "theme": "contacts",
+          "rang": null,
+          "top3": [
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Vous êtes étudiant international :",
+            "Conditions d'admission au programme Ingénieur > Calendrier : > Parcoursup simplifie vos "
+          ]
+        },
+        {
+          "question": "Qui est la chargée d'admission de la Coding Factory ?",
+          "theme": "contacts",
+          "rang": null,
+          "top3": [
+            "Coding Factory > L'école qui bouscule le code !",
+            "Coding Factory > Concepteur Développeur d'Applications : ",
+            "Coding Factory > Admission (Hors Parcoursup) : / Se spéci"
+          ]
+        },
+        {
+          "question": "Quel est l'email du programme ingénieur ?",
+          "theme": "contacts",
+          "rang": 6,
+          "top3": [
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale ",
+            "Conditions d'admission au programme Ingénieur > Procédure de candidature internationale "
+          ]
+        },
+        {
+          "question": "Quel est l'email de la Coding Factory ?",
+          "theme": "contacts",
+          "rang": null,
+          "top3": [
+            "Coding Factory > La Coding Factory, une pédagogie innovan",
+            "Coding Factory > Concepteur Développeur d'Applications : ",
+            "Coding Factory > L'école qui bouscule le code !"
+          ]
+        },
+        {
+          "question": "Qui est la conseillère carrière du campus de Pontoise ?",
+          "theme": "contacts",
+          "rang": 8,
+          "top3": [
+            "Pontoise > Présentation / Les financeurs du campus ",
+            "Campus de Pontoise > Présentation",
+            "ESIEE-IT : Elodie Teneur, une experte en cybersécurité formé > Et après tes études, que souhaites-tu fa"
+          ]
+        },
+        {
+          "question": "Combien d'intervenants et d'enseignants compte l'école ?",
+          "theme": "ecole",
+          "rang": 6,
+          "top3": [
+            "A new school is born > Chiffres clés d'ESIEE-IT / Expert by ESI",
+            "Chiffres clés et labels > Présentation / Notre ADN : > - Innover s",
+            "Une école aux choix multiples > À retenir"
+          ]
+        },
+        {
+          "question": "Combien de domaines de spécialisation propose ESIEE-IT ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "Les Métiers de l'IT : Un secteur d'avenir et ses opportunité > ESIEE-IT offre une formation complète et",
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é",
+            "A new school is born > Chiffres clés d'ESIEE-IT / Expert by ESI"
+          ]
+        },
+        {
+          "question": "Depuis quand le groupe est-il labellisé Lucie 26000 ?",
+          "theme": "ecole",
+          "rang": 8,
+          "top3": [
+            "CCI Paris Ile-de-France Education obtient le Label LUCIE 260 > Une reconnaissance et une motivation pou",
+            "CCI Paris Ile-de-France Education obtient le Label LUCIE 260 > Un engagement récompensé par le Label LU",
+            "CCI Paris Ile-de-France Education obtient le Label LUCIE 260 > Présentation"
+          ]
+        },
+        {
+          "question": "Combien d'étudiants ont été sensibilisés à la transition écologique ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "La Fresque du Climat à ESIEE-IT : les étudiants s’engagent p > Un parcours complet de sensibilisation.",
+            "Les écoles d’ingénieurs sont-elles cohérentes avec ce qu’ell > Une réduction de 46% de CO₂e par an",
+            "Les écoles d’ingénieurs sont-elles cohérentes avec ce qu’ell > Présentation"
+          ]
+        },
+        {
+          "question": "ESIEE-IT a-t-elle participé au challenge ENERGIC ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "ESIEE-IT, l’école à Impact des entreprises du Futur > Un engagement fort pour le développement",
+            "ESIEE-IT, l’école à Impact des entreprises du Futur > - Nathalie Patrat > Directrice Générale ",
+            "Les projets d'études à l'école ESIEE-IT > Projets d’études en ingénierie environne"
+          ]
+        },
+        {
+          "question": "Comment s'appelle le BDE d'ESIEE-IT ?",
+          "theme": "vie etudiante",
+          "rang": null,
+          "top3": [
+            "Associations étudiantes ESIEE-IT : au cœur de la vie étudian > Le Bureau des Étudiants (BDE) qui anime ",
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é",
+            "Ecole d'ingénieurs : Foire Aux Questions > Réponses à toutes les questions que vous"
+          ]
+        },
+        {
+          "question": "L'école peut-elle se porter garant pour ma location ?",
+          "theme": "vie etudiante",
+          "rang": 6,
+          "top3": [
+            "Quelles sont les aides au logement quand on est étudiant ? > La garantie Visale",
+            "Nos engagements > Besoin d'aide ? d'accompagnement ? / Une",
+            "Quelles sont les aides au logement quand on est étudiant ? > Les conseils de notre référente logement"
+          ]
+        },
+        {
+          "question": "Peut-on faire un semestre Erasmus en Espagne ?",
+          "theme": "international",
+          "rang": 6,
+          "top3": [
+            "Erasmus à Madrid : un semestre à l’étranger entre découverte > Pourquoi choisir une mobilité internatio",
+            "Erasmus à Madrid : un semestre à l’étranger entre découverte > Présentation",
+            "Erasmus à Madrid : un semestre à l’étranger entre découverte > Un système scolaire très différent de la"
+          ]
+        },
+        {
+          "question": "Qui peut partir en semestre Erasmus+ ?",
+          "theme": "international",
+          "rang": 8,
+          "top3": [
+            "Erasmus+ pendant son alternance c'est possible > Erasmus+, c’est pour qui ?",
+            "Erasmus+ pendant son alternance c'est possible > Présentation",
+            "Erasmus+ conseils d'Hugo pour votre expérience à l'internati > Présentation (partie 3/3)"
+          ]
+        },
+        {
+          "question": "Qui contacter pour la protection des données personnelles ?",
+          "theme": "legal",
+          "rang": 6,
+          "top3": [
+            "Comment l'entrée en vigueur du RGPD impacte-t-elle le monde  > Qu'est-ce que le RGPD ? (partie 2/4)",
+            "Comment l'entrée en vigueur du RGPD impacte-t-elle le monde  > Qu'est-ce que le RGPD ? (partie 1/4)",
+            "Mentions légales > Présentation (partie 2/2)"
+          ]
+        },
+        {
+          "question": "Je suis en BTS, quelle formation ESIEE-IT me conseillez-vous ?",
+          "theme": "orientation",
+          "rang": null,
+          "top3": [
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é",
+            "Devenez ingénieur informatique > Comment devenir d’ingénieur informatique",
+            "Reconversion en Informatique : Optez pour une carrière d'ave > Les avantages des formations ESIEE-IT"
+          ]
+        }
+      ]
+    },
+    "bm25": {
+      "global": {
+        "n": 254,
+        "hit@1": 0.559,
+        "hit@3": 0.728,
+        "hit@5": 0.839,
+        "mrr@10": 0.668
+      },
+      "par_theme": {
+        "VAE": {
+          "n": 4,
+          "hit@1": 0.25,
+          "hit@3": 0.5,
+          "hit@5": 0.75,
+          "mrr@10": 0.438
+        },
+        "actualites": {
+          "n": 5,
+          "hit@1": 1.0,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 1.0
+        },
+        "admissions": {
+          "n": 29,
+          "hit@1": 0.414,
+          "hit@3": 0.69,
+          "hit@5": 0.793,
+          "mrr@10": 0.577
+        },
+        "alternance": {
+          "n": 8,
+          "hit@1": 0.75,
+          "hit@3": 0.875,
+          "hit@5": 1.0,
+          "mrr@10": 0.844
+        },
+        "campus": {
+          "n": 8,
+          "hit@1": 0.375,
+          "hit@3": 0.625,
+          "hit@5": 0.75,
+          "mrr@10": 0.526
+        },
+        "contacts": {
+          "n": 13,
+          "hit@1": 0.615,
+          "hit@3": 0.692,
+          "hit@5": 0.923,
+          "mrr@10": 0.712
+        },
+        "ecole": {
+          "n": 23,
+          "hit@1": 0.435,
+          "hit@3": 0.652,
+          "hit@5": 0.783,
+          "mrr@10": 0.564
+        },
+        "entreprises": {
+          "n": 12,
+          "hit@1": 0.583,
+          "hit@3": 0.75,
+          "hit@5": 0.917,
+          "mrr@10": 0.691
+        },
+        "evenements": {
+          "n": 8,
+          "hit@1": 0.625,
+          "hit@3": 0.75,
+          "hit@5": 0.875,
+          "mrr@10": 0.73
+        },
+        "financement": {
+          "n": 19,
+          "hit@1": 0.684,
+          "hit@3": 0.737,
+          "hit@5": 0.842,
+          "mrr@10": 0.733
+        },
+        "formation continue": {
+          "n": 11,
+          "hit@1": 0.909,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 0.955
+        },
+        "formations": {
+          "n": 53,
+          "hit@1": 0.434,
+          "hit@3": 0.698,
+          "hit@5": 0.83,
+          "mrr@10": 0.588
+        },
+        "international": {
+          "n": 21,
+          "hit@1": 0.476,
+          "hit@3": 0.619,
+          "hit@5": 0.714,
+          "mrr@10": 0.575
+        },
+        "legal": {
+          "n": 3,
+          "hit@1": 0.333,
+          "hit@3": 0.333,
+          "hit@5": 0.333,
+          "mrr@10": 0.426
+        },
+        "metiers": {
+          "n": 12,
+          "hit@1": 1.0,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 1.0
+        },
+        "orientation": {
+          "n": 2,
+          "hit@1": 0.0,
+          "hit@3": 0.0,
+          "hit@5": 0.0,
+          "mrr@10": 0.0
+        },
+        "recherche": {
+          "n": 9,
+          "hit@1": 0.667,
+          "hit@3": 0.778,
+          "hit@5": 0.889,
+          "mrr@10": 0.731
+        },
+        "vie etudiante": {
+          "n": 14,
+          "hit@1": 0.714,
+          "hit@3": 0.857,
+          "hit@5": 0.929,
+          "mrr@10": 0.815
+        }
+      },
+      "echecs_top5": [
+        {
+          "question": "Quels sont les débouchés du parcours ingénieur IA et données de santé ?",
+          "theme": "formations",
+          "rang": 10,
+          "top3": [
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Le diplôme",
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Les + de la formation",
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Présentation / Informations clés"
+          ]
+        },
+        {
+          "question": "Quel est le numéro RNCP du titre d'ingénieur ESIEE-IT ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "La VAE : validation des acquis de l'expérience > Quel diplôme peut-on obtenir chez ESIEE-",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > FAQ > Questions fréquentes sur le Bachel",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > FAQ > Questions fréquentes sur le Bachel"
+          ]
+        },
+        {
+          "question": "Quelles matières de santé sont enseignées dans le parcours IA & Données ?",
+          "theme": "formations",
+          "rang": 9,
+          "top3": [
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Le diplôme",
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Les + de la formation",
+            "INTEGR'IT : L'innovation technologique au service d'un monde > Santé & technologies : ageing in place, "
+          ]
+        },
+        {
+          "question": "Quels diplômes faut-il pour entrer en cycle ingénieur en deux ans ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Programme Ingénieur : Cycle préparatoire intégré > FAQ > Questions fréquentes sur le cycle ",
+            "Programme Ingénieur : Cycle préparatoire intégré > Poursuite d'études",
+            "Programme Ingénieur : Cycle préparatoire intégré > FAQ > Questions fréquentes sur le cycle "
+          ]
+        },
+        {
+          "question": "Comment se passe la sélection pour le cycle ingénieur : dossier, entretien ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Programme Ingénieur : Cycle préparatoire intégré > FAQ > Questions fréquentes sur le cycle ",
+            "Programme Ingénieur : Cycle préparatoire intégré > Prérequis et modalités d'admission (part",
+            "Programme Ingénieur : Cycle préparatoire intégré > FAQ > Questions fréquentes sur le cycle "
+          ]
+        },
+        {
+          "question": "Combien de temps dure le parcours ingénieur Informatique & Applications ?",
+          "theme": "formations",
+          "rang": 7,
+          "top3": [
+            "10 métiers après le diplôme ingénieur parcours Informatique  > Devenir ingénieur informatique avec le P",
+            "10 métiers après le diplôme ingénieur parcours Informatique  > Présentation",
+            "Programme Ingénieur : Prépa & Cycle Ingénieur > Parcours \"Informatique et Applications\""
+          ]
+        },
+        {
+          "question": "Quand a lieu l'épreuve de mathématiques du concours Galaxy ?",
+          "theme": "admissions",
+          "rang": 6,
+          "top3": [
+            "Ecole d'ingénieurs : Foire Aux Questions > Quel est le processus de recrutement à l",
+            "ESIEE-IT lance son cycle préparatoire intégré à l'école d'in > Présentation (partie 5/7)",
+            "ESIEE-IT lance son cycle préparatoire intégré à l'école d'in > Présentation (partie 4/7)"
+          ]
+        },
+        {
+          "question": "Combien coûte le Bachelor Concepteur Développeur d'Applications en temps plein ?",
+          "theme": "financement",
+          "rang": null,
+          "top3": [
+            "Bienvenue sur l'espace \"Candidature\" d'ESIEE-IT & Coding Fac > Bachelor Concepteur Développeur d'Applic",
+            "Coding Factory > Concepteur Développeur d'Applications : ",
+            "Bac +3 Concepteur Développeur d'Applications > Pré-requis : Bac"
+          ]
+        },
+        {
+          "question": "C'est quoi la Coding Factory ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Pourquoi l'IA ne remplacera pas les développeurs > Comment la Coding Factory prépare les dé",
+            "Taxe d'apprentissage et dons > Trouver Coding Factory by ESIEE-IT sur S",
+            "Le guide des métiers du code > Présentation / Vos contacts > Contact Co"
+          ]
+        },
+        {
+          "question": "Peut-on entrer directement en 2e année du Bac+5 cybersécurité ?",
+          "theme": "admissions",
+          "rang": 8,
+          "top3": [
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > FAQ > Questions fréquentes sur le Bac+5 ",
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > Admissions > Comment candidater ? / Prér",
+            "Bienvenue sur l'espace \"Candidature\" d'ESIEE-IT & Coding Fac > Bachelor Concepteur Développeur d'Applic"
+          ]
+        },
+        {
+          "question": "Quels métiers vise le Bac+5 cybersécurité ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Bac +5 - Expert en ingénierie informatique et innovation num > Secteurs d'activités",
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > FAQ > Questions fréquentes sur le Bac+5 ",
+            "Programmes Experts > Bac+5 Expert en Ingénierie Informatique "
+          ]
+        },
+        {
+          "question": "Quels sont les blocs de compétences du Bac+5 Expert en ingénierie informatique (E3IN) ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Bac +5 - Expert en ingénierie informatique et innovation num > Examens et délivrance du diplôme",
+            "Programmes Experts > Bac+5 Expert en Ingénierie Informatique ",
+            "Bac+5 - Expert en ingénierie informatique et innovation numé > Examens et délivrance du diplôme"
+          ]
+        },
+        {
+          "question": "Où a lieu la classe dédiée B-School by BNP Paribas ?",
+          "theme": "formations",
+          "rang": 9,
+          "top3": [
+            "Classe dédiée ESIEE‑IT × B‑School by BNP Paribas > Présentation",
+            "Classe dédiée ESIEE‑IT × B‑School by BNP Paribas > B‑School by BNP Paribas : une école enga",
+            "Classe dédiée ESIEE‑IT × B‑School by BNP Paribas > Des résultats concrets"
+          ]
+        },
+        {
+          "question": "Quel niveau faut-il pour entrer en licence informatique L3 ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Informatique - IA - Cyber - Devops > Bac +3 & Licence en informatique",
+            "Rejoignez ESIEE-IT, l'école d’ingénieurs et d'informatique d > Les formations Post-Bac en informatique ",
+            "Licence informatique CNAM - L3 - en 1 an > En quoi consiste notre licence informati"
+          ]
+        },
+        {
+          "question": "Quels sont les modules de la Licence informatique CNAM ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Programmes Experts > Licence > Entrée en 3ème année : / Licen",
+            "Informatique - IA - Cyber - Devops > Bac +3 & Licence en informatique",
+            "Licence informatique CNAM - L3 - en 1 an > Présentation / Informations clés"
+          ]
+        },
+        {
+          "question": "Quels documents faut-il fournir pour candidater en ligne ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > Admissions > Comment candidater ? / Prér",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > Comment candidater ? / Prérequis du Bach",
+            "FAQ Orientation & Alternance : Trouvez toutes vos réponses ! > Comment candidater à l’école ESIEE-IT ?"
+          ]
+        },
+        {
+          "question": "Combien coûte une formation en alternance à ESIEE-IT ?",
+          "theme": "financement",
+          "rang": null,
+          "top3": [
+            "La VAE : validation des acquis de l'expérience > Nos indicateurs / Combien coûte la démar",
+            "L'alternance, un tremplin vers l'emploi pour les étudiants e > Présentation",
+            "L'alternance : stop aux idées reçues ! > À ESIEE-IT, nous croyons fermement que l"
+          ]
+        },
+        {
+          "question": "Comment demander une bourse ESIEE-IT ?",
+          "theme": "financement",
+          "rang": 10,
+          "top3": [
+            "Bourses ESIEE-IT 2026-2027 : un soutien concret pour finance > Les types de bourses disponibles / Bours",
+            "Bourses ESIEE-IT 2026-2027 : un soutien concret pour finance > Tableau du calcul du montant de la bours",
+            "Bourses ESIEE-IT 2026-2027 : un soutien concret pour finance > Bourses CROUS"
+          ]
+        },
+        {
+          "question": "C'est quoi la VAE ?",
+          "theme": "VAE",
+          "rang": null,
+          "top3": [
+            "La VAE : validation des acquis de l'expérience > Comment bien commencer sa VAE avec ESIEE",
+            "La VAE : validation des acquis de l'expérience > La VAE individuelle > Qui peut en bénéfi",
+            "La VAE : validation des acquis de l'expérience > Titre RNCP : / Comment financer ma VAE ?"
+          ]
+        },
+        {
+          "question": "Que se passe-t-il pendant la journée portes ouvertes du 7 février ?",
+          "theme": "evenements",
+          "rang": 7,
+          "top3": [
+            "Journées Portes Ouvertes > Présentation",
+            "Coding Factory > Nos autres évènements :",
+            "Programmes Experts > Charlotte, Bac +5, Expert en Ingénierie "
+          ]
+        },
+        {
+          "question": "Qui est la chargée d'admission de la Coding Factory ?",
+          "theme": "contacts",
+          "rang": null,
+          "top3": [
+            "Les événements et outils clés pour votre orientation > GNANA Marie > Chargée de Promotion Sourc",
+            "Bac+5 Manager en Ingénierie Informatique - Parcours Lead Dev > Bon à savoir / Vos contacts > Contact Co",
+            "Bac +3 Concepteur Développeur d'Applications > Nos indicateurs / Vos contacts > Contact"
+          ]
+        },
+        {
+          "question": "Quelle est l'adresse du campus de Paris ?",
+          "theme": "campus",
+          "rang": 8,
+          "top3": [
+            "SAFe for Teams (SAFe Practitioner) – SPRA0 > Appliquer SAFe / Public et pré-requis > ",
+            "SAFe Lean Portfolio Management (SAFe LPM) – SLPM0 > Appliquer SAFe / Public et pré-requis > ",
+            "SAFe for Architects (SAFe ARCH) – SARC0 > Public et pré-requis > À qui s’adresse c"
+          ]
+        },
+        {
+          "question": "À quelle distance de Paris se trouve l'école ?",
+          "theme": "campus",
+          "rang": null,
+          "top3": [
+            "Témoignage de Wijdane, étudiante en prépa ingénieur > Présentation",
+            "Nos partenariats internationaux > Les partenariats académiques",
+            "L'alternance : stop aux idées reçues ! > À ESIEE-IT, nous croyons fermement que l"
+          ]
+        },
+        {
+          "question": "Depuis combien d'années existe ESIEE-IT ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "Remise des diplômes ESIEE-IT : la promo 2025 célèbre la fin  > Présentation",
+            "Programme Ingénieur : Prépa & Cycle Ingénieur > Cycle ingénieur en 3 ans / Admission :",
+            "Bataille de la tech : un jeu collectif pour former des exper > Présentation"
+          ]
+        },
+        {
+          "question": "Quel est le taux de réussite aux examens à ESIEE-IT ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "Business Analyse > Pourquoi choisir ESIEE-IT pour se former",
+            "La VAE : validation des acquis de l'expérience > Nos indicateurs / Combien coûte la démar",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > Tarif pour les étudiants internationaux"
+          ]
+        },
+        {
+          "question": "Combien d'entreprises partenaires a l'école ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "Devenez partenaire Entreprise d'ESIEE-IT > Présentation",
+            "CY Alliance : La force d'un réseau académique au service de  > Etablissements membres de CY Alliance / ",
+            "Devenez partenaire Entreprise d'ESIEE-IT > Comment devenir partenaire ? / VENUAT Bo"
+          ]
+        },
+        {
+          "question": "Quand ESIEE-IT a-t-elle été créée ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "L'entrepreneuriat > Entreprendre à ESIEE-IT : Innover pour l",
+            "Classe dédiée ESIEE‑IT × B‑School by BNP Paribas > B‑School by BNP Paribas : une école enga",
+            "SAFe DevOps Practitioner (SDP SAFe4) – SSDP0 > Réduire le Time to Market avec le déploi"
+          ]
+        },
+        {
+          "question": "Quel est le taux d'emploi des diplômés 7 mois après leur sortie ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > Nos indicateurs",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > Tarif pour les étudiants internationaux",
+            "Bac +3 Développeur de Solutions Numériques Sécurisées (Titre > Nos indicateurs"
+          ]
+        },
+        {
+          "question": "Comment s'appelle le BDE d'ESIEE-IT ?",
+          "theme": "vie etudiante",
+          "rang": 6,
+          "top3": [
+            "Associations étudiantes ESIEE-IT : au cœur de la vie étudian > Le Bureau des Étudiants (BDE) qui anime ",
+            "Rémi Massenya : diplômé ESIEE-IT à architecte SI, retour sur > De la formation à l’architecture SI : mo",
+            "ESIEE-IT et Sup de V se mobilisent contre le cancer : La cam > Des défis solidaires pour une cause nobl"
+          ]
+        },
+        {
+          "question": "Combien de partenariats européens a ESIEE-IT ?",
+          "theme": "international",
+          "rang": 8,
+          "top3": [
+            "Nos partenariats internationaux > Partenaires académiques Européens dans l",
+            "Inetum et ESIEE-IT s’engagent pour féminiser les métiers de  > Présentation",
+            "Étudiants internationaux > Les étudiants de nationalité non françai"
+          ]
+        },
+        {
+          "question": "Y a-t-il un partenaire Erasmus en Turquie ?",
+          "theme": "international",
+          "rang": 6,
+          "top3": [
+            "Erasmus à travers les yeux de nationalités différentes > Présentation (partie 13/14)",
+            "Erasmus à travers les yeux de nationalités différentes > Présentation (partie 5/14)",
+            "Erasmus à travers les yeux de nationalités différentes > Présentation (partie 2/14)"
+          ]
+        },
+        {
+          "question": "Qui peut partir en semestre Erasmus+ ?",
+          "theme": "international",
+          "rang": null,
+          "top3": [
+            "Erasmus+ pendant son alternance c'est possible > Partir avec Erasmus + pendant son altern",
+            "Etudiants internationaux en échange Erasmus+ > Présentation (partie 1/4)",
+            "Erasmus+ pendant son alternance c'est possible > Partir avec Erasmus + pendant son altern"
+          ]
+        },
+        {
+          "question": "C'est quoi le projet MONA ?",
+          "theme": "international",
+          "rang": 6,
+          "top3": [
+            "Projet Mona : une ambition européenne pour la mobilité longu > Objectifs concrets du projet Mona > Chif",
+            "Projet Mona : une ambition européenne pour la mobilité longu > L’engagement d’ESIEE-IT dans le projet M",
+            "Projet Mona : une ambition européenne pour la mobilité longu > Les formations concernées par le projet "
+          ]
+        },
+        {
+          "question": "Quelle est la durée minimale d'une mobilité MONA ?",
+          "theme": "international",
+          "rang": 8,
+          "top3": [
+            "Projet Mona : une ambition européenne pour la mobilité longu > Chiffres clés d'ESIEE-IT / La mobilité :",
+            "Projet Mona : une ambition européenne pour la mobilité longu > Objectifs concrets du projet Mona > Chif",
+            "Projet Mona : une ambition européenne pour la mobilité longu > L’engagement d’ESIEE-IT dans le projet M"
+          ]
+        },
+        {
+          "question": "Où logent les étudiants Erasmus qui viennent à ESIEE-IT ?",
+          "theme": "international",
+          "rang": null,
+          "top3": [
+            "La Fresque du Climat à ESIEE-IT : les étudiants s’engagent p > Un parcours complet de sensibilisation.",
+            "Erasmus Day 2023 à ESIEE-IT > Episode 2 : La vie en Erasmus : ce qui m",
+            "Erasmus Day 2023 à ESIEE-IT > Erasmus Days 2023 à ESIEE-IT > Episode 1"
+          ]
+        },
+        {
+          "question": "Comment recruter un apprenti d'ESIEE-IT ?",
+          "theme": "entreprises",
+          "rang": 8,
+          "top3": [
+            "Ils nous font confiance > Eva ZERBIB - Projets RH – Relations écol",
+            "Devenez partenaire Entreprise d'ESIEE-IT > Pourquoi devenir partenaire d'ESIEE-IT ?",
+            "B-School by BNP Paribas & Coding Factory by ESIEE-IT : La no > L'alliance B-School by BNP Paribas et ES"
+          ]
+        },
+        {
+          "question": "Combien de temps dure le pitch dans l'accompagnement entrepreneuriat ?",
+          "theme": "recherche",
+          "rang": null,
+          "top3": [
+            "L'entrepreneuriat > Présentation",
+            "Les étudiants d’ESIEE-IT tirent un premier bilan très positi > Présentation",
+            "L'entrepreneuriat > Une articulation fluide entre études et "
+          ]
+        },
+        {
+          "question": "Qui contacter pour la protection des données personnelles ?",
+          "theme": "legal",
+          "rang": 9,
+          "top3": [
+            "Mentions légales > Hébergement : (partie 2/2) / À télécharg",
+            "Comment l'entrée en vigueur du RGPD impacte-t-elle le monde  > Qu'est-ce que le RGPD ? (partie 1/4)",
+            "Nos formations éligibles CPF > Référent Cybersécurité en TPE-PME (RCYB0"
+          ]
+        },
+        {
+          "question": "Le site d'ESIEE-IT est-il accessible aux personnes handicapées ?",
+          "theme": "legal",
+          "rang": 6,
+          "top3": [
+            "6 conseils pour réussir son alternance en situation de handi > Connaissez vos droits",
+            "L'alternance, un tremplin vers l'emploi pour les étudiants e > Les aides financières et les accompagnem",
+            "L'alternance, un tremplin vers l'emploi pour les étudiants e > News !"
+          ]
+        },
+        {
+          "question": "Je suis en BTS, quelle formation ESIEE-IT me conseillez-vous ?",
+          "theme": "orientation",
+          "rang": null,
+          "top3": [
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é",
+            "Mathilde Houdmon, de BTS à l’école d’ingénieurs ESIEE-IT > Présentation",
+            "Mathilde Houdmon, de BTS à l’école d’ingénieurs ESIEE-IT > Pourquoi avoir choisi ESIEE-IT ?"
+          ]
+        },
+        {
+          "question": "Je n'ai pas encore trouvé de formation après mon bac+2, qui peut m'aider ?",
+          "theme": "orientation",
+          "rang": null,
+          "top3": [
+            "Témoignage de Wijdane, étudiante en prépa ingénieur > Une vocation pour aider les autres",
+            "Aider un étudiant admis à ESIEE-IT à trouver une alternance > Présentation",
+            "Étudier au Canada : le retour d’expérience de Barbara, étudi > Une préparation facilitée par l’accompag"
+          ]
+        }
+      ]
+    },
+    "hybride": {
+      "global": {
+        "n": 254,
+        "hit@1": 0.689,
+        "hit@3": 0.823,
+        "hit@5": 0.909,
+        "mrr@10": 0.778
+      },
+      "par_theme": {
+        "VAE": {
+          "n": 4,
+          "hit@1": 0.5,
+          "hit@3": 0.5,
+          "hit@5": 1.0,
+          "mrr@10": 0.613
+        },
+        "actualites": {
+          "n": 5,
+          "hit@1": 1.0,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 1.0
+        },
+        "admissions": {
+          "n": 29,
+          "hit@1": 0.621,
+          "hit@3": 0.724,
+          "hit@5": 0.897,
+          "mrr@10": 0.7
+        },
+        "alternance": {
+          "n": 8,
+          "hit@1": 0.875,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 0.938
+        },
+        "campus": {
+          "n": 8,
+          "hit@1": 0.75,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 0.854
+        },
+        "contacts": {
+          "n": 13,
+          "hit@1": 0.692,
+          "hit@3": 0.769,
+          "hit@5": 0.769,
+          "mrr@10": 0.753
+        },
+        "ecole": {
+          "n": 23,
+          "hit@1": 0.565,
+          "hit@3": 0.739,
+          "hit@5": 0.87,
+          "mrr@10": 0.689
+        },
+        "entreprises": {
+          "n": 12,
+          "hit@1": 0.667,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 0.833
+        },
+        "evenements": {
+          "n": 8,
+          "hit@1": 1.0,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 1.0
+        },
+        "financement": {
+          "n": 19,
+          "hit@1": 0.632,
+          "hit@3": 0.789,
+          "hit@5": 0.947,
+          "mrr@10": 0.739
+        },
+        "formation continue": {
+          "n": 11,
+          "hit@1": 0.818,
+          "hit@3": 0.909,
+          "hit@5": 0.909,
+          "mrr@10": 0.875
+        },
+        "formations": {
+          "n": 53,
+          "hit@1": 0.585,
+          "hit@3": 0.755,
+          "hit@5": 0.868,
+          "mrr@10": 0.701
+        },
+        "international": {
+          "n": 21,
+          "hit@1": 0.667,
+          "hit@3": 0.81,
+          "hit@5": 0.905,
+          "mrr@10": 0.771
+        },
+        "legal": {
+          "n": 3,
+          "hit@1": 0.667,
+          "hit@3": 0.667,
+          "hit@5": 0.667,
+          "mrr@10": 0.722
+        },
+        "metiers": {
+          "n": 12,
+          "hit@1": 1.0,
+          "hit@3": 1.0,
+          "hit@5": 1.0,
+          "mrr@10": 1.0
+        },
+        "orientation": {
+          "n": 2,
+          "hit@1": 0.5,
+          "hit@3": 0.5,
+          "hit@5": 0.5,
+          "mrr@10": 0.5
+        },
+        "recherche": {
+          "n": 9,
+          "hit@1": 0.889,
+          "hit@3": 0.889,
+          "hit@5": 0.889,
+          "mrr@10": 0.9
+        },
+        "vie etudiante": {
+          "n": 14,
+          "hit@1": 0.714,
+          "hit@3": 0.929,
+          "hit@5": 1.0,
+          "mrr@10": 0.836
+        }
+      },
+      "echecs_top5": [
+        {
+          "question": "Quels sont les débouchés du parcours ingénieur IA et données de santé ?",
+          "theme": "formations",
+          "rang": 6,
+          "top3": [
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Le diplôme",
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Les + de la formation",
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Objectifs"
+          ]
+        },
+        {
+          "question": "Quel est le numéro RNCP du titre d'ingénieur ESIEE-IT ?",
+          "theme": "formations",
+          "rang": 7,
+          "top3": [
+            "La VAE : validation des acquis de l'expérience > Quel diplôme peut-on obtenir chez ESIEE-",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > FAQ > Questions fréquentes sur le Bachel",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > Méthodes mobilisées : (partie 2/3)"
+          ]
+        },
+        {
+          "question": "Comment se passe la sélection pour le cycle ingénieur : dossier, entretien ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "Programme Ingénieur : Cycle préparatoire intégré > Prérequis et modalités d'admission (part",
+            "Programme Ingénieur : Cycle préparatoire intégré > FAQ > Questions fréquentes sur le cycle ",
+            "Programme Ingénieur : Cycle préparatoire intégré > FAQ > Questions fréquentes sur le cycle "
+          ]
+        },
+        {
+          "question": "Quand faut-il formuler ses vœux Parcoursup pour la prépa ESIEE-IT ?",
+          "theme": "admissions",
+          "rang": null,
+          "top3": [
+            "FAQ Orientation & Alternance : Trouvez toutes vos réponses ! > Présentation / Postuler à ESIEE-IT, hors",
+            "Mon témoignage d’étudiante en prépa du programme Ingénieur E > Admission : / Découvrez d’autres témoign",
+            "Mon témoignage d’étudiante en prépa du programme Ingénieur E > De la kinésithérapie à l’ingénierie : un"
+          ]
+        },
+        {
+          "question": "Quels parcours peut-on choisir en 3e année de Bachelor informatique ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > FAQ > Questions fréquentes sur le Bachel",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > Comment candidater ? / Prérequis du Bach",
+            "Bac +3 Bachelor Informatique - Développeur de Solutions Numé > FAQ > Questions fréquentes sur le Bachel"
+          ]
+        },
+        {
+          "question": "C'est quoi la Coding Factory ?",
+          "theme": "formations",
+          "rang": 9,
+          "top3": [
+            "Coding Factory > Le Guide des Métiers / Les ateliers d'in",
+            "Pourquoi l'IA ne remplacera pas les développeurs > Comment la Coding Factory prépare les dé",
+            "Coding Factory > Concepteur Développeur d'Applications : "
+          ]
+        },
+        {
+          "question": "Quels métiers vise le Bac+5 cybersécurité ?",
+          "theme": "formations",
+          "rang": null,
+          "top3": [
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > FAQ > Questions fréquentes sur le Bac+5 ",
+            "Bac +5 Option Cybersécurité - Expert en ingénierie informati > FAQ > Questions fréquentes sur le Bac+5 ",
+            "Bac +5 - Expert en ingénierie informatique et innovation num > Secteurs d'activités"
+          ]
+        },
+        {
+          "question": "Quels sont les blocs de compétences du Bac+5 Expert en ingénierie informatique (E3IN) ?",
+          "theme": "formations",
+          "rang": 10,
+          "top3": [
+            "Programmes Experts > Bac+5 Expert en Ingénierie Informatique ",
+            "Bac +5 - Expert en ingénierie informatique et innovation num > Examens et délivrance du diplôme",
+            "Bac +5 - Expert en ingénierie informatique et innovation num > Suite de Parcours & Poursuite d'Études"
+          ]
+        },
+        {
+          "question": "C'est quoi le projet Retrobikefury ?",
+          "theme": "formations",
+          "rang": 7,
+          "top3": [
+            "Devenir chef de projet robotique et innovation technologique > Présentation",
+            "Les projets d'études à l'école ESIEE-IT > Projets de développement logiciel",
+            "Projet Mona : une ambition européenne pour la mobilité longu > Objectifs concrets du projet Mona > Chif"
+          ]
+        },
+        {
+          "question": "Quels sont les horaires des formations continues ?",
+          "theme": "formation continue",
+          "rang": 8,
+          "top3": [
+            "SAFe DevOps Practitioner (SDP SAFe4) – SSDP0 > Décrire la Chaine de production de valeu",
+            "Formation Bac+5 Lead Developpeur B-School by BNP Paribas > Analyse, conception et modélisation / Dé",
+            "SAFe DevOps Practitioner (SDP SAFe4) – SSDP0 > Réduire le Time to Market avec le déploi"
+          ]
+        },
+        {
+          "question": "Quels documents faut-il fournir pour candidater en ligne ?",
+          "theme": "admissions",
+          "rang": 7,
+          "top3": [
+            "FAQ Orientation & Alternance : Trouvez toutes vos réponses ! > Comment candidater à l’école ESIEE-IT ?",
+            "Candidatez à ESIEE-IT > Comment candidater ?",
+            "Candidatez à ESIEE-IT > Comment candidater ? (partie 1/2)"
+          ]
+        },
+        {
+          "question": "Combien coûte une formation en alternance à ESIEE-IT ?",
+          "theme": "financement",
+          "rang": 6,
+          "top3": [
+            "Informatique > Pourquoi choisir ESIEE-IT pour se former",
+            "Reconversion en Informatique : Optez pour une carrière d'ave > Les avantages des formations ESIEE-IT",
+            "1ère année du cycle ingénieur en alternance > Vos contacts > Contact Pédagogie / Conta"
+          ]
+        },
+        {
+          "question": "Qui est la chargée d'admission de la Coding Factory ?",
+          "theme": "contacts",
+          "rang": null,
+          "top3": [
+            "Coding Factory > L'école qui bouscule le code !",
+            "Coding Factory > Concepteur Développeur d'Applications : ",
+            "De la reconversion à la création d’entreprise > Rejoindre la Coding Factory pour une nou"
+          ]
+        },
+        {
+          "question": "Quel est le numéro de téléphone de l'accueil ?",
+          "theme": "contacts",
+          "rang": 6,
+          "top3": [
+            "Annuaire des contacts ESIEE-IT > Présentation (partie 10/11) / Présentati",
+            "Annuaire des contacts ESIEE-IT > Présentation (partie 3/11)",
+            "Annuaire des contacts ESIEE-IT > Présentation (partie 9/11)"
+          ]
+        },
+        {
+          "question": "Quel est l'email de la Coding Factory ?",
+          "theme": "contacts",
+          "rang": 8,
+          "top3": [
+            "Taxe d'apprentissage et dons > Trouver Coding Factory by ESIEE-IT sur S",
+            "Coding Factory > Concepteur Développeur d'Applications : ",
+            "Pourquoi l'IA ne remplacera pas les développeurs > Comment la Coding Factory prépare les dé"
+          ]
+        },
+        {
+          "question": "Depuis combien d'années existe ESIEE-IT ?",
+          "theme": "ecole",
+          "rang": 7,
+          "top3": [
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é",
+            "Remise des diplômes ESIEE-IT : la promo 2025 célèbre la fin  > Présentation",
+            "A new school is born > Chiffres clés d'ESIEE-IT / Expert by ESI"
+          ]
+        },
+        {
+          "question": "Combien d'entreprises partenaires a l'école ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "Devenez partenaire Entreprise d'ESIEE-IT > Présentation",
+            "Les partenariats entreprise : une collaboration gagnante pou > Co-développement des formations avec les",
+            "Les partenariats entreprise : une collaboration gagnante pou > Co-développement des formations avec les"
+          ]
+        },
+        {
+          "question": "Quel est le taux d'emploi des diplômés 7 mois après leur sortie ?",
+          "theme": "ecole",
+          "rang": null,
+          "top3": [
+            "Cycle ingénieur - Parcours Informatique & Applications en al > Nos indicateurs",
+            "Bac +3 Développeur de Solutions Numériques Sécurisées (Titre > Nos indicateurs",
+            "Cycle Ingénieur Parcours \"IA & Données\" en alternance > Nos indicateurs / Vos contacts > Contact"
+          ]
+        },
+        {
+          "question": "Qui peut partir en semestre Erasmus+ ?",
+          "theme": "international",
+          "rang": 10,
+          "top3": [
+            "Erasmus+ pendant son alternance c'est possible > Présentation",
+            "Erasmus+ pendant son alternance c'est possible > Partir avec Erasmus + pendant son altern",
+            "Erasmus+ pendant son alternance c'est possible > Partir avec Erasmus + pendant son altern"
+          ]
+        },
+        {
+          "question": "Où logent les étudiants Erasmus qui viennent à ESIEE-IT ?",
+          "theme": "international",
+          "rang": 10,
+          "top3": [
+            "Erasmus Day 2023 à ESIEE-IT > Erasmus Days 2023 à ESIEE-IT > Episode 1",
+            "Erasmus Day 2023 à ESIEE-IT > Erasmus Days 2023 à ESIEE-IT > Episode 1",
+            "Erasmus Day 2023 à ESIEE-IT > Erasmus Days 2023 à ESIEE-IT > Episode 1"
+          ]
+        },
+        {
+          "question": "Combien de temps dure le pitch dans l'accompagnement entrepreneuriat ?",
+          "theme": "recherche",
+          "rang": 10,
+          "top3": [
+            "L'entrepreneuriat > Un accompagnement structuré pour les étu",
+            "L'entrepreneuriat > Une articulation fluide entre études et ",
+            "Être étudiant et entrepreneur, c’est possible ? > Comment avoir accès à ce statut ? (parti"
+          ]
+        },
+        {
+          "question": "Qui contacter pour la protection des données personnelles ?",
+          "theme": "legal",
+          "rang": 6,
+          "top3": [
+            "Comment l'entrée en vigueur du RGPD impacte-t-elle le monde  > Qu'est-ce que le RGPD ? (partie 1/4)",
+            "Comment l'entrée en vigueur du RGPD impacte-t-elle le monde  > Qu'est-ce que le RGPD ? (partie 2/4)",
+            "Mentions légales > Hébergement : (partie 2/2) / À télécharg"
+          ]
+        },
+        {
+          "question": "Je suis en BTS, quelle formation ESIEE-IT me conseillez-vous ?",
+          "theme": "orientation",
+          "rang": null,
+          "top3": [
+            "Ecole d'ingénieurs : Foire Aux Questions > Quels diplômes faut-il pour intégrer l'é",
+            "Devenez ingénieur informatique > Comment devenir d’ingénieur informatique",
+            "Mathilde Houdmon, de BTS à l’école d’ingénieurs ESIEE-IT > Pourquoi avoir choisi ESIEE-IT ?"
+          ]
+        }
+      ]
+    }
+  }
+}

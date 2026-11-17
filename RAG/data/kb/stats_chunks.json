@@ -1,0 +1,37 @@
+{
+  "documents": 310,
+  "chunks": 2139,
+  "chunks_doublons_fusionnes": 47,
+  "lignes_perdues_au_decoupage": 0,
+  "chunks_partages_par_plusieurs_pages": 24,
+  "taille_caracteres": {
+    "min": 127,
+    "mediane": 820,
+    "moyenne": 842,
+    "max": 1756
+  },
+  "par_categorie": {
+    "ecole_institution": 468,
+    "formations": 467,
+    "entreprises_alternance": 328,
+    "metiers_orientation": 258,
+    "international": 210,
+    "admissions_financement": 183,
+    "recherche_innovation": 129,
+    "campus_contacts": 43,
+    "vie_etudiante": 34,
+    "informations_legales": 19
+  },
+  "par_type": {
+    "article": 936,
+    "page_informative": 410,
+    "fiche_formation": 293,
+    "fiche_metier": 239,
+    "page_formation": 112,
+    "formation_courte": 67,
+    "faq": 38,
+    "page_legale": 19,
+    "evenement": 15,
+    "annuaire": 10
+  }
+}

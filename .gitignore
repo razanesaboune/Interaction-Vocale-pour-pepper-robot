@@ -84,3 +84,8 @@ dist/
 # LOCAL DATABASES
 *.sqlite3
 *.db
+
+# RAG : fichiers générés
+RAG/data/html_cache/
+RAG/data/chroma_db/
+RAG/data/scraping_etat.json
